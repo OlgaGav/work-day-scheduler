@@ -30,7 +30,9 @@ When user save event notification "Appointment Added to localStorage ✓" is dis
 ![Screenshot of the application with notification message 'Appointment Added to localStorage ✓'](assets/images/AppScreenshot_Notification.png)
 
 The current time event is highlighed by **red** color background.
+
 All future event you may see on **green** background.
+
 All past events are **grey**.
 
 ## Credits
