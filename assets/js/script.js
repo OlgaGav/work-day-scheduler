@@ -3,6 +3,7 @@ var currentDate = now.format('dddd, MMMM Do');
 var dateStamp = now.format('MM-DD-YY');
 var currentTime = now.format('hA');
 var idCurrentTime;
+var storedSchedule;
 $('#currentDay').text(currentDate);
 
 const workingHours = ['9AM','10AM','11AM','12PM','1PM','2PM','3PM','4PM','5PM'];
@@ -44,3 +45,15 @@ $.each(workingHours, function (i, hours) {
 }) 
 
 // ToDo: render schedule from local storage
+$(document).ready(function() {
+    storedSchedule = JSON.parse(localStorage.getItem('schedule'))
+    console.log("storedSchedule", storedSchedule);
+    if (storedSchedule === null) {
+        return;
+    }
+    $.each(storedSchedule, function(i, event) {
+        console.log("i:", i);
+        console.log("event", event);
+        $('textarea#d'+i).val(event);
+    })
+})
