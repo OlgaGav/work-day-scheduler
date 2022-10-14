@@ -17,6 +17,12 @@ button {
   border: none;
 }
 
+p.notification {
+  padding: 0.3rem;
+  margin: 0;
+  text-align: center;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -77,4 +83,13 @@ button {
   font-size: 3rem;
   color: black;
   transition: all .3s ease-in-out;
+}
+
+/* used in notification area */
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
 }
